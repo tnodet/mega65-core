@@ -141,6 +141,11 @@ $GIT_ROOT/xemu$> mv ~/Downloads/sd-card-image-for-xemu-xmega65.img.gz .
 $GIT_ROOT/xemu$> gunzip sd-card-image-for-xemu-xmega65.img.gz 
 $GIT_ROOT/xemu$> mv sd-card-image-for-xemu-xmega65.img mega65.img
 ```
+If the error looks like "FILE: @mega65.img cannot be open, tried path(s):  /home/user/.local/share/xemu-lgb/mega65/mega65.img
+ERROR: Cannot open SD-card image /home/user/.local/share/xemu-lgb/mega65/mega65.img, SD-card access won't work! ERROR: No such file or directory", you may want to move the image file to the correct directory:
+```
+$GIT_ROOT/xemu$> mv mega65.img ~/.local/share/xemu-lgb/mega65/mega65.img
+```
 
 Then re-run the xemu application
 
